@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Youtube Home",
+    "version": "1.0",
+  
+    "description": "Hide recommended videos from youtube homepage.",
+  
+    "icons": {
+      "48": "icons/yt-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["youtube_hide_home.js"]
+      }
+    ]
+  
+  }
